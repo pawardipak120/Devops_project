@@ -1,0 +1,17 @@
+export PATH=/apache-maven-3.6.1/bin:$PATH;
+
+vi ~/.bash_profil
+
+
+find /usr/lib/jvm/java-1.x.x-openjdk
+vim /etc/profile
+
+Prepend sudo if logged in as not-privileged user, ie. sudo vim
+
+Press 'i' to get in insert mode
+add:
+
+export JAVA_HOME="path that you found"
+
+export PATH=$JAVA_HOME/bin:$PATH
+logout and login again, reboot, or use source /etc/profile to apply changes immediately in your current shell
